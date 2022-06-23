@@ -15,7 +15,9 @@ header{
   }
   h1 {
     border: 2px solid#16A085;padding:3vh;
+
     color:#0DF3EA;
+
     font-family:"fuentes";
     text-align: center;
     font-size: 3em;
@@ -78,6 +80,13 @@ header{
   border-color: black;
   box-shadow: 0 0 10vh #F7DC6F, 0 0 10vh #F7DC6F,0 0 10vh #F7DC6F;
   }
+
+  .carousel-inner{
+    width: 100%;
+  }
+  .carousel-item{
+    width: 95%;
+  }
   section{
 
     text-align: justify;
@@ -101,12 +110,7 @@ header{
     font-family: 'Catamaran', sans-serif;
     font-family: 'Quicksand', sans-serif;
     }
-    ol{
-        width: 98%;
-    }
-    ul{
-        width: 98%;
-    }
+    
 
     li{
 
@@ -131,18 +135,19 @@ header{
 
     width: 99%;
     }
-
-    .mapa{
-            
-      width: 48%;
-      height: 90%;
-     }
-     .video{
-      
-      width: 40%;
-      height: 15%;
-     }
+    iframe{
+      margin-left: 14%;
     }
+    .mapa{
+      width: 70vw;
+      height: 50vh;
+    }
+    .video{
+      width: 70vw;
+      height: 50vh;
+    }
+   
+    
     .audio{
         width: 70%;
         margin-left: 14%;
@@ -185,205 +190,405 @@ header{
           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);	}
       100%{
           box-shadow: 0 0 0 4vh rgba(0, 0, 0, 0);	}
-
-
+    }
   }
 
 /*media query tablet*/
 
-  @media (min-width: 576px) and (max-width: 991px) {
-
-    body {
-        background-color:#008E7F;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        max-width: 100%;
-        }
-        /*CARDS*/
-        .contenedorr{margin-top:50px;justify-content: space-around;
-
-        }
-        .card {
-          background-color: #434E6C;
-          color: antiquewhite;
-
-        }
-        .row {text-align:-webkit-center;
-            color: antiquewhite;
-
-
-        }
-
-        header{
-            width: 100%;
-            text-align: center;
-          }
-          h1 {
-            border: 2px solid#16A085;padding:3vh;
-
-            color:#E2C7AB;
-            font-family: 'Lobster', cursive;
-            font-family: 'Secular One', sans-serif;
-            text-align: center;
-            font-size: 3em;}
-
-
-
-            h2 {font-family: 'Secular One', sans-serif;
-              color:#E2C7AB;
-              font-size: xxlarge ;border-radius: 10vh;
-              font-family: 'Lobster', cursive;
-              font-family: 'Secular One', sans-serif;
-              text-align: center;
-              font-size: 3em;
-
-             }
-             .audio {
-              display: none;
-            }
-             p{
-              width: 95%;
-             color:#F4F6F7;padding:2vh;
-             font-size:1.5em;
-             font-family: 'Catamaran', sans-serif;
-             font-family: 'Gentium Plus', serif;
-             font-family: 'Josefin Sans', sans-serif;
-             font-family: 'Kdam Thmor Pro', sans-serif;
-             font-family: 'Quicksand', sans-serif;
-             font-family: 'Righteous', cursive;
-             font-family: 'Source Sans Pro', sans-serif;
-             text-align: justify;
-
-             }
-             h3 {font-size: 1.5em;
-             text-align: center;
-             color:#E2C7AB;
-             display: flex; flex-direction: column;
-             justify-content: space-around; align-items: center;
-             font-family: 'Lobster', cursive;
-             font-family: 'Righteous', cursive;
-             font-family: 'Secular One', sans-serif;
-             }
-             .mapa{
-            
-              width: 48%;
-              height: 90%;
-             }
-             .video{
-              
-              width: 40%;
-              height: 15%;
-             }
-             li{
-
-             font-size:1.5em;
-             color:#F4F6F7;
-
-
-  }
-}
-/*media query Pc*/
-
-@media (min-width: 992px) and (max-width: 2500px) {
+@media (min-width: 576px) and (max-width: 991px) {
 
   body {
-    background-image: linear-gradient(to right top, #231b20, #2f2931, #3a3943, #444a55, #4d5b66, #4d5b66, #4d5b66, #4d5b66, #444a55, #3a3943, #2f2931, #231b20);
+    background-color:#008E7F;
     background-repeat: no-repeat;
     background-attachment: fixed;
     max-width: 100%;
     }
-      /*CARDS*/
-      .contenedorr{
-        margin-top:50px;
-        justify-content: space-around;
-
-      } 
-      .card {
-        background-color: #434E6C;
+    header{
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      border: 2px solid#16A085;padding:3vh;
+  
+      color:#0DF3EA;
+  
+      font-family:"fuentes";
+      text-align: center;
+      font-size: 3em;
+    }
+  
+  
+  
+    @font-face {
+      font-family: "fuentes";
+      src: url("../fuentes/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+  
+    }
+    h2 {font-family:"fuentes";
+      color:#0DF3EA;font-size: xxlarge ;border-radius: 10vh;
+      font-family: monospace;
+      text-align: center;
+      font-size: 3em;
+  
+     }
+     p{
+      width: 95%;
+     color:#F4F6F7;padding:2vh;
+     font-size:1.5em;
+     font-family: 'Catamaran', sans-serif;
+     font-family: 'Gentium Plus', serif;
+     font-family: 'Josefin Sans', sans-serif;
+     font-family: 'Kdam Thmor Pro', sans-serif;
+     font-family: 'Quicksand', sans-serif;
+     font-family: 'Righteous', cursive;
+     font-family: 'Source Sans Pro', sans-serif;
+     text-align: justify;
+  
+     }
+  
+    /*CARDS*/
+  
+    .card {
+      background-color: #5B737A;
+      color: antiquewhite;
+  
+    }
+    .card-text {color:#4B4A54; text-align:  center;background-color: #5B737A;
         color: antiquewhite;
-        font-size: 0.7em;
+  
+  
+    }
+    .row {text-align:-webkit-center;
+        color: antiquewhite;
+        width: 100%;
+  
+    }
+  
+    .botreceta{
+        background-color: black;
+    }
+    .botreceta:hover{
+    font-weight: bold;
+    color:black;
+    background:#F7DC6F;
+    border-color: black;
+    box-shadow: 0 0 10vh #F7DC6F, 0 0 10vh #F7DC6F,0 0 10vh #F7DC6F;
+    }
 
+  
+  .carousel-inner{
+    width: 100%;
+  }
+  .carousel-item{
+    width: 95%;
+  }
+
+    section{
+  
+      text-align: justify;
+      width: 99%;
+      display: flex;
+      flex-direction: column;
+  
+  
+      box-sizing: border-box;
+      font-family: 'Andika', sans-serif;
+      font-family: 'IM Fell English', serif;
+      font-family: 'Luckiest Guy', cursive;
+      font-family: 'Rammetto One', cursive;
+  
       }
-      .row {text-align:-webkit-center;
-          color: antiquewhite;
-
-
+      h3 {font-size: 1.5em;
+      text-align: left;
+      color:#0DF3EA;
+      display: flex; flex-direction: column;
+      justify-content: space-around; align-items: center;
+      font-family: 'Catamaran', sans-serif;
+      font-family: 'Quicksand', sans-serif;
       }
-
-      header{
+      
+  
+      li{
+  
+      font-size:1.5em;
+      color:#F4F6F7;
+      text-align: left;font-family: 'Catamaran', sans-serif;
+      font-family: 'Gentium Plus', serif;
+      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      font-family: 'Righteous', cursive;
+      font-family: 'Source Sans Pro', sans-serif;
+  
+      }
+  
+  
+      aside{
+      font-size: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      width: 99%;
+      }
+      iframe{
+        margin-left: 14%;
+      }
+      .mapa{
+        width: 70vw;
+        height: 50vh;
+      }
+      .video{
+        width: 70vw;
+        height: 50vh;
+      }
+     
+      
+      .audio{
+          width: 70%;
+          margin-left: 14%;
+      }
+  
+      footer{
+           border: 2px  solid#16A085;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
-          text-align: center;
-        }
-        h1 {
-          border: 2px solid#16A085;padding:3vh;
+    }
+  
+    .wsp{
+      background-color: #2e6329;
+          border:1vh solid white;
+          position: fixed;
+          z-index: 999;
+          border-radius:50%;
+          bottom: 2vh;
+          right: 10vh;
+          padding: 2.5vh;
+          transition: ease 0.3s;
+          width: 2.5vh;
+          animation: efecto 1.2s infinite;
+  
+    }
+    .wsp{
+        padding: center;
+        width: 10vh;
+        transition: ease 1s;
+  
+    }
+    .wsp:hover{transform: scale(1.1);
+        transition: 0.3s;
+  
+    }
+    @keyframes efecto{
+        0%{
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);	}
+        100%{
+            box-shadow: 0 0 0 4vh rgba(0, 0, 0, 0);	}
+      }
+    }
+  
+/*media query pc*/
+@media (min-width: 992px) and (max-width: 2500px) {
+  body {
+      background-image: linear-gradient(to right top, #231b20, #2f2931, #3a3943, #444a55, #4d5b66, #4d5b66, #4d5b66, #4d5b66, #444a55, #3a3943, #2f2931, #231b20);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      max-width: 98%;
+      }
 
-          color:#E2C7AB;
-          font-family: 'Lobster', cursive;
-          font-family: 'Secular One', sans-serif;
-          text-align: center;
-          font-size: 3em;}
+
+header{
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  border: 2px solid#16A085;padding:3vh;
+
+  color:#0DF3EA;
+
+  font-family:"fuentes";
+  text-align: center;
+  font-size: 3em;
+}
 
 
 
-          h2 {font-family: 'Secular One', sans-serif;
-            color:#E2C7AB;
-            font-size: xxlarge ;border-radius: 10vh;
-            font-family: 'Lobster', cursive;
-            font-family: 'Secular One', sans-serif;
-            text-align: center;
-            font-size: 3em;
+@font-face {
+  font-family: "fuentes";
+  src: url("../fuentes/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
 
-           }
-           .audio {
-            display: none;
-          }
-           p{
-            width: 95%;
-           color:#F4F6F7;padding:2vh;
-           font-size:1.5em;
-           font-family: 'Catamaran', sans-serif;
-           font-family: 'Gentium Plus', serif;
-           font-family: 'Josefin Sans', sans-serif;
-           font-family: 'Kdam Thmor Pro', sans-serif;
-           font-family: 'Quicksand', sans-serif;
-           font-family: 'Righteous', cursive;
-           font-family: 'Source Sans Pro', sans-serif;
-           text-align: justify;
+}
+h2 {font-family:"fuentes";
+  color:#0DF3EA;font-size: xxlarge ;border-radius: 10vh;
+  font-family: monospace;
+  text-align: center;
+  font-size: 3em;
 
-           }
-           h3 {font-size: 1.5em;
-           text-align: center;
-           color:#E2C7AB;
-           display: flex; flex-direction: column;
-           justify-content: space-around; align-items: center;
-           font-family: 'Lobster', cursive;
-           font-family: 'Righteous', cursive;
-           font-family: 'Secular One', sans-serif;
-           }
-           aside{
-            font-size: 1em;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        
-           
-            }
-            iframe{
-              margin:5%
-            }
-           .mapa{
-            
-            width: 40%;
-            height: 50%;
-           }
-           .video{
-            
-            width: 40%;
-            height: 50%;
-           }
-           li{
+ }
+ p{
+  width: 95%;
+ color:#F4F6F7;padding:2vh;
+ font-size:1.5em;
+ font-family: 'Catamaran', sans-serif;
+ font-family: 'Gentium Plus', serif;
+ font-family: 'Josefin Sans', sans-serif;
+ font-family: 'Kdam Thmor Pro', sans-serif;
+ font-family: 'Quicksand', sans-serif;
+ font-family: 'Righteous', cursive;
+ font-family: 'Source Sans Pro', sans-serif;
+ text-align: justify;
 
-           font-size:1.5em;
-           color:#F4F6F7;
-          }
+ }
+
+/*CARDS*/
+
+.card {
+  background-color: #5B737A;
+  color: antiquewhite;
+  width: 100%;
+
+}
+.card-text {
+  color:#4B4A54; 
+  text-align:  center;
+  background-color: #5B737A;
+  color: antiquewhite;
+
+
+
+}
+.row {
+  text-align:center;
+    color: antiquewhite;
+}
+
+.botreceta{
+    background-color: black;
+}
+.botreceta:hover{
+font-weight: bold;
+color:black;
+background:#F7DC6F;
+border-color: black;
+box-shadow: 0 0 10vh #F7DC6F, 0 0 10vh #F7DC6F,0 0 10vh #F7DC6F;
+}
+
+
+
+.carousel-inner{
+  width: 100%;
+}
+.carousel-item{
+  width: 95%;
+}
+
+section{
+
+  text-align: justify;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+
+
+  box-sizing: border-box;
+  font-family: 'Andika', sans-serif;
+  font-family: 'IM Fell English', serif;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Rammetto One', cursive;
+
+  }
+  h3 {font-size: 1.5em;
+  text-align: left;
+  color:#0DF3EA;
+  display: flex; flex-direction: column;
+  justify-content: space-around; align-items: center;
+  font-family: 'Catamaran', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  }
+
+  li{
+
+  font-size:1.5em;
+  color:#F4F6F7;
+  text-align: left;font-family: 'Catamaran', sans-serif;
+  font-family: 'Gentium Plus', serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Righteous', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  }
+
+
+  aside{
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 99%;
+  }
+  iframe{
+    margin-left: 14%;
+  }
+  .mapa{
+    width: 70vw;
+    height: 60vh;
+  }
+  .video{
+    width: 70vw;
+    height: 60vh;
+  }
+
+ 
+  
+  .audio{
+    display: none;
+      width: 70%;
+      margin-left: 14%;
+  }
+
+  footer{
+       border: 2px  solid#16A085;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+}
+
+.wsp{
+  background-color: #2e6329;
+  border:1vh solid white;
+  position: fixed;
+  z-index: 999;
+  border-radius:50%;
+  bottom: 2vh;
+      right: 10vh;
+      padding: 2.5vh;
+      transition: ease 0.3s;
+      width: 2.5vh;
+      animation: efecto 1.2s infinite;
+
+}
+.wsp{
+    padding: center;
+    width: 10vh;
+    transition: ease 1s;
+
+}
+.wsp:hover{transform: scale(1.1);
+    transition: 0.3s;
+
+}
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);	}
+    100%{
+        box-shadow: 0 0 0 4vh rgba(0, 0, 0, 0);	}
+
+
+}
 }
